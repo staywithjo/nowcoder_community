@@ -22,23 +22,19 @@ public class CopyFile {
             int len;
             byte[] data = new byte[1024];
 
-            while((len = fis.read(data)) != -1){
-                fos.write(data,0,len);
+            while ((len = fis.read(data)) != -1) {
+                fos.write(data, 0, len);
             }
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 fis.close();
                 fos.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-
         }
-
-
-
     }
 }
