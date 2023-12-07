@@ -21,5 +21,5 @@
 
 
 _相关习题（简单）_
-* LeetCode 485 最大连续1的个数
-* LeetCode 283 移动零
+* LeetCode 203 最大连续1的个数
+* LeetCode 206 反转链表
