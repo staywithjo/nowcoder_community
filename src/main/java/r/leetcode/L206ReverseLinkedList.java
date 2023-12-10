@@ -79,5 +79,21 @@ public class L206ReverseLinkedList {
 
             return currentNode;
         }
+
+        public ListNode reverseListFunc4(ListNode head){
+            if(head == null){
+                return head;
+            }
+            ListNode pre = null;
+            ListNode next = null;
+
+            while (head != null){
+                next = head.next;
+                head.next = pre;
+                pre = head;
+                head = next;
+            }
+            return pre;
+        }
     }
 }
