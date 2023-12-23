@@ -7,6 +7,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * Author:Jo
  * Description:数组
  */
+//相关题 数组485 283 27
 public class Array {
     public static void main(String[] args) {
         //数组初始化
@@ -32,7 +33,7 @@ public class Array {
         extendArr(arr,10);
     }
     //遍历数组
-    static void getArr(int[] arr){
+    public static void getArr(int[] arr){
         for(int i : arr){
             System.out.println(i);
         }
