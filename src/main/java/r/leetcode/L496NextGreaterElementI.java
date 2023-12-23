@@ -1,4 +1,4 @@
-package r.algorithm;
+package r.leetcode;
 
 /**
  * Date:2023/12/12
