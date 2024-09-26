@@ -9,6 +9,10 @@ import java.util.*;
  */
 public class LeetCode49 {
     public static void main(String[] args) {
+        //学会用getOrDefault()
+//        map.getOrDefault(key,default);
+//        判断是否存在key，如果存在，返回该key对应的value
+//        若不存在，则返回这设置的默认值 default
         //49.字母异位词分组
         class Solution {
             public List<List<String>> groupAnagrams(String[] strs) {
