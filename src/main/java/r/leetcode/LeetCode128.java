@@ -11,18 +11,26 @@ import java.util.Stack;
 public class LeetCode128 {
     class Solution {
         public int longestConsecutive(int[] nums) {
-            Arrays.stream(nums).sorted();
+            if (nums.length == 0) {
+                return 0;
+            }
+            Arrays.sort(nums);
+            for (int num : nums) {
+                System.out.print(num + ",");
+            }
             int max = 0;
-            int cur = 0;
+            int cur = 1;
             for (int i = 0; i < nums.length - 1; i++) {
-                if (nums[i] == nums[i + 1]) {
+                if (nums[i] + 1 == nums[i + 1]) {
                     cur = cur + 1;
+                } else if (nums[i] == nums[i + 1]) {
+
                 } else {
                     max = Math.max(cur, max);
-                    cur = 0;
+                    cur = 1;
                 }
             }
-            return max;
+            return Math.max(cur, max);
         }
     }
 }
