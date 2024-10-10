@@ -13,7 +13,7 @@ public class LeetCode3162 {
             int res = 0;
             for (int i : nums1) {
                 for (int j : nums2) {
-                    if (i % j * k == 0) {
+                    if (i % (j * k) == 0) {
                         res++;
                     }
                 }
