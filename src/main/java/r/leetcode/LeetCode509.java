@@ -8,9 +8,9 @@ import sun.print.SunMinMaxPage;
  * Description:509.斐波那契数
  */
 public class LeetCode509 {
-    //    F(0) = 0，F(1) = 1
-//    F(n) = F(n - 1) + F(n - 2)，其中 n > 1
-    //自下而上
+    // F(0) = 0，F(1) = 1
+    // F(n) = F(n - 1) + F(n - 2)，其中 n > 1
+    // 自下而上
     class Solution {
         public int fib(int n) {
             if (n < 2) {
