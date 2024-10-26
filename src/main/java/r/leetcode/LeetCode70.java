@@ -8,12 +8,10 @@ package r.leetcode;
 public class LeetCode70 {
     class Solution {
         public int climbStairs(int n) {
-            if (n == 1) {
-                return 1;
+            if (n <= 2) {
+                return n;
             }
-            if (n == 2) {
-                return 2;
-            }
+
             int fun1 = 1;
             int fun2 = 2;
             int fun = 0;
