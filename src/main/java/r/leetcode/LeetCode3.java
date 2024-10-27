@@ -18,7 +18,7 @@ public class LeetCode3 {
             int max = 0;
             int j = 0;
             for (int i = 0; i < s.length(); i++) {
-                if (i > 0) {
+                if (i != 0) {
                     set.remove(s.charAt(i - 1));
                 }
                 while (j < s.length() && !set.contains(s.charAt(j))) {
